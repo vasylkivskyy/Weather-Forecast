@@ -1,11 +1,10 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import Subscription from "../models/subscription.js"; // Імпортуємо модель
+import Subscription from "../models/subscription.js";
 
 dotenv.config();
 
-const MONGODB_URI =
-  process.env.MONGODB_URI || "mongodb://localhost:27017/weatherSubscription";
+const MONGODB_URI = process.env.MONGODB_URI;
 
 async function connectDatabase() {
   try {

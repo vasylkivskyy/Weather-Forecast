@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 const startServer = async () => {
   try {
-    //await connectDatabase();
+    await connectDatabase();
     app.use("/api", weatherRoutes);
     app.use("/api", subscriptionRoutes);
 
